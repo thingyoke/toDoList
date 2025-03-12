@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Edit Task</title>
     <link rel="stylesheet" href="{{ asset('css/edit.css') }}">
 </head>
+
 <body>
     <div class="container">
         <h1>Edit Task</h1>
@@ -11,6 +13,7 @@
             @csrf
             @method('PUT')
             <table>
+
                 <tr>
                     <td><label>Title</label></td>
                 </tr>
@@ -21,7 +24,9 @@
                     <td><label>Description</label></td>
                 </tr>
                 <tr>
-                    <td><textarea name="description">{{ $task->description }}</textarea></td>
+                    <td>
+                        <textarea name="description">{{ $task->description }}</textarea>
+                    </td>
                 </tr>
                 <tr>
                     <td><button type="submit">Update</button></td>
@@ -30,4 +35,5 @@
         </form>
     </div>
 </body>
+
 </html>

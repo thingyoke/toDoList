@@ -18,9 +18,6 @@
 
             <label for="description">Description</label>
             <textarea name="description" id="description"></textarea>
-            <label for="description">Description</label>
-            <textarea name="description" id="description"></textarea>
-
             <button type="submit">Create</button>
         </form>
     </div>
